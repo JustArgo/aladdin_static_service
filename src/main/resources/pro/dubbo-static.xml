@@ -12,8 +12,8 @@
 	
 	<dubbo:protocol name="dubbo" port="-1"/>
 	
-	<dubbo:service group="g1" interface="com.mi360.aladdin.staticpage.service.IStaticService" ref="staticService1"/>
-	<bean id="staticService1" class="com.mi360.aladdin.staticpage.service.impl.StaticServiceImpl">
+	<dubbo:service group="g1" interface="com.mi360.aladdin.staticpage.service.IStaticService" ref="staticService"/>
+	<bean id="staticService" class="com.mi360.aladdin.staticpage.service.impl.StaticServiceImpl">
 		<property name="targetPath" value="${targetPath}"/>
 		<property name="sourceDomain" value="${sourceDomain}"/>
 		<property name="qiniuDomain" value="${qiniuDomain}"/>
