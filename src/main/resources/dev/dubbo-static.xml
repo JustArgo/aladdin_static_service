@@ -17,6 +17,11 @@
 		<property name="targetPath" value="${targetPath}"/>
 		<property name="sourceDomain" value="${sourceDomain}"/>
 		<property name="qiniuDomain" value="${qiniuDomain}"/>
+		<property name="oneBuyDomain" value="${oneBuyDomain}"/>
+		<property name="twoDimensionCodeImg" value="${twoDimensionCodeImg}"/>
+		<property name="productCategoryService" ref="productCategoryService"/>
 	</bean>
+
+	<dubbo:reference id="productCategoryService" interface="com.mi360.aladdin.product.category.service.ProductCategoryService"/>
 
 </beans>

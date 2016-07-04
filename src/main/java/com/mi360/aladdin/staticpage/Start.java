@@ -15,8 +15,8 @@ private static Logger logger = Logger.getLogger("System.out");
     	initialize();
     	ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[] { "applicationContext.xml" });
 		context.start();
-		//IStaticService staticService = context.getBean(IStaticService.class);
-		//staticService.staticPageToPath("", "http://www.baidu.com");
+		IStaticService staticService = context.getBean(IStaticService.class);
+		staticService.staticPagePC("", "", "index");
 		System.out.println("静态化微服务启动");
 		while(true){
 			Thread.sleep(1000);
