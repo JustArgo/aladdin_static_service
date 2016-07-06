@@ -10,7 +10,7 @@
 	<dubbo:application name="aladdin_static_service" />
 	<dubbo:registry  protocol="zookeeper" address="zookeeper://115.29.249.236:2181" timeout="30000"/>
 	
-	<dubbo:protocol name="dubbo" port="-1" host="120.24.186.15"/>
+	<dubbo:protocol name="dubbo" port="-1" host="120.24.75.174"/>
 	
 	<dubbo:service group="g1" interface="com.mi360.aladdin.staticpage.service.IStaticService" ref="staticService"/>
 	<bean id="staticService" class="com.mi360.aladdin.staticpage.service.impl.StaticServiceImpl">
